@@ -8,7 +8,9 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:#F0E3FF ;
+    /* background:#F0E3FF ; */
+    background-image: url(images/pexels-rostislav-uzuno.jpg);
+    background-size:cover ;
 }
 header{
     position:fixed;
@@ -36,7 +38,7 @@ header:hover{
     }
 }
 .logo{
-    color:#3E206D;
+    color:#eaddff;
     font-size: 2em;
     font-family: sans-serif;
     font-weight: 700;
@@ -115,7 +117,7 @@ header .btnLogin-popup:hover::before{
     position: relative;
     width: 400px;
     height: 440px;
-    background: transparent;
+    background: whitesmoke;
     border: 2px solid #3E206D;
     border-radius: 20px;
     transition: transform 0.5s;
