@@ -114,12 +114,13 @@ header .btnLogin-popup:hover::before{
     transform-origin: left;
 }
 .wrapper{
-    position: relative;
+    position: absolute;
     width: 400px;
     height: 440px;
-    background: whitesmoke;
-    border: 2px solid #3E206D;
+    background: transparent;
+    border: 2px solid #b186f7;
     border-radius: 20px;
+    backdrop-filter: blur(20px);
     transition: transform 0.5s;
     display:flex;
     justify-content: center;
@@ -127,7 +128,8 @@ header .btnLogin-popup:hover::before{
     transition:transform .5s, height .2s ease;
     overflow: hidden;
     transform: scale(0);
-    
+    /* z-index: 5; */
+
 }
 .wrapper.active-btnPopup{
     transform:scale(1);
@@ -164,7 +166,7 @@ header .btnLogin-popup:hover::before{
     height:45px;
     width: 45px;
     background: #916DD5;
-    color: #F0E3FF;
+    color: #3E206D;
     font-size:1.5em ;
     display: flex;
     justify-content: center;
@@ -173,23 +175,23 @@ header .btnLogin-popup:hover::before{
     z-index: 5;
 }
 .wrapper .icon-close:hover{
-    background: #3E206D;
+    background: #f7f6f8;
 }
 
 .form-box h2{
-    color:#3E206D;
+    color:#ceb1fc;
     font-size: 2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
 .form-box label{
-    color:#3E206D;
+    color:#ceb1fc;
 }
 .input-box{
     position: relative;
     width:100%;
     height: 40px;
-    border-bottom:2px solid #3E206D;
+    border-bottom:2px solid #ceb1fc;
     margin:30px 0;
 }
 
@@ -221,10 +223,11 @@ header .btnLogin-popup:hover::before{
     font-size: 1em;
     padding:0 35px 0 5px;
     font-weight: 600;
+    color: #ceb1fc;
 }
 .input-box .icons{
     position:absolute;
-    color: #3E206D;
+    color: #ceb1fc;
     right:8px;
     font-size: 1.2em;
     line-height: 57px;
@@ -238,34 +241,41 @@ header .btnLogin-popup:hover::before{
 }
 .remember-forget label input{
     margin-right: 3px;
-    accent-color: #3E206D;
+    accent-color: #fff;
 }
 .remember-forget a{
-    color:#3E206D;
+    color:#ceb1fc;
     text-decoration: none;
 }
 .btn{
     width: 100%;
     height:40px;
-    background: #3E206D;
+    background: #bb93fc;
     border: none;
     outline:none;
-    color: #F0E3FF;
+    color: #3E206D;
     border-radius: 6px;
     font-size: 1em;
 }
 .login-register{
     font-size: .9em;
-    color:#3E206D;
+    color:#c7a8f8;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 .login-register p a{
-    color:#3E206D;
+    color:#e4d4ff;
     text-decoration: none;
     font-weight: 600;
 }
 .login-register p a:hover{
     text-decoration: underline;
+}
+
+.about-page{
+    height: 100vh;
+}
+.about-container{
+    padding: 10%;
 }
