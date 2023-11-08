@@ -9,7 +9,7 @@ body{
     align-items: center;
     min-height: 100vh;
     /* background:#F0E3FF ; */
-    background-image: url(images/pexels-rostislav-uzuno.jpg);
+    background-image: url(images/restaurant.jpg);
     background-size:cover ;
 }
 header{
@@ -277,5 +277,13 @@ header .btnLogin-popup:hover::before{
     height: 100vh;
 }
 .about-container{
+    color: white;
+    margin-top: 80px;
     padding: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    /* color: white; */
 }
