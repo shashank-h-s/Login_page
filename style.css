@@ -2,16 +2,9 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
-body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /* background:#F0E3FF ; */
-    background-image: url(images/restaurant.jpg);
-    background-size:cover ;
-}
+
 header{
     position:fixed;
     top:0;
@@ -22,10 +15,9 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-
+    background-color: transparent;
 }
-header:hover{
-    background: #916DD5;
+header:hover{   
     .logo{
         color: #ffffff;
     }
@@ -45,11 +37,13 @@ header:hover{
     transition: 0.3s;
     
 }
-/* djchbdisjcbo */
+.nav-bar{
+    margin-left: -100px;
+}
 .nav-bar a{
     position: relative;
     font-size: 1.1em;
-    color:#916DD5;
+    color:#e0e0e0;
     text-decoration: none;
     margin-left: 20px;
     font-weight: 500;
@@ -60,9 +54,9 @@ header .btnLogin-popup{
     position: relative;
     padding:5px 10px;
     font-size: 1.1em;
-    border: 2px solid #916DD5;
-    background: transparent;
-    color:#916DD5;
+    border: 2px solid #b3b3b3;
+    background: rgb(0, 0, 0);
+    color:#ffffff;
     border-radius: 15px;
     margin-left:20px;
     transform:scale(0.95) ;
@@ -103,7 +97,7 @@ header .btnLogin-popup:hover::before{
     content: '';
     width:100%;
     height:3px;
-    background:#3E206D;
+    background:#fcfcfc;
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
@@ -128,8 +122,6 @@ header .btnLogin-popup:hover::before{
     transition:transform .5s, height .2s ease;
     overflow: hidden;
     transform: scale(0);
-    /* z-index: 5; */
-
 }
 .wrapper.active-btnPopup{
     transform:scale(1);
@@ -273,17 +265,23 @@ header .btnLogin-popup:hover::before{
     text-decoration: underline;
 }
 
-.about-page{
-    height: 100vh;
+section{
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+#home{
+    background-image: url(images/restaurant.jpg);
+    background-size: cover;
+    
+    
 }
 .about-container{
-    color: white;
-    margin-top: 80px;
+    color: #fff;
+    background-color:rgba(0, 0, 0, .7) ;
     padding: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.content{
-    /* color: white; */
 }
