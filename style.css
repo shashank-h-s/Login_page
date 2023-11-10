@@ -19,7 +19,7 @@ header{
     background-color: rgba(0, 0, 0, .7);
     z-index: 5;
 }
-header:hover{   
+/* header:hover{   
     .logo{
         color: #ffffff;
     }
@@ -30,7 +30,7 @@ header:hover{
         border: 2px solid #F0E3FF;
         color:#F0E3FF;
     }
-}
+} */
 .logo{
     color:#eaddff;
     font-size: 2em;
@@ -105,7 +105,9 @@ header .btnLogin-popup:hover::before{
     transform: scaleX(0);
     transition: transform .5s;
 }
-.nav-bar a:hover::after{
+.nav-bar a:hover::after,.nav-bar .active{
+    font-size: 20px ;
+    color: darkgoldenrod;
     transform: scaleX(1);
     transform-origin: left;
 }
