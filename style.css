@@ -5,6 +5,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+
 header{
     position:fixed;
     top:0;
@@ -15,7 +16,8 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 5;
 }
 header:hover{   
     .logo{
@@ -108,7 +110,9 @@ header .btnLogin-popup:hover::before{
     transform-origin: left;
 }
 .wrapper{
-    position: absolute;
+    position: fixed;
+    top:20%;
+    left: 35%;
     width: 400px;
     height: 440px;
     background: transparent;
@@ -272,16 +276,67 @@ section{
    align-items: center; 
 }
 #home{
-    background-image: url(images/restaurant.jpg);
+    background-image: url(images/pic1.jpg);
     background-size: cover;
-    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.50);
     
 }
 .about-container{
+    height: 100%;
     color: #fff;
-    background-color:rgba(0, 0, 0, .7) ;
     padding: 10%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    z-index: 1;
+}
+.profile{
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 20px;
+    padding: 5%;
+}
+.img1{
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.profile h2{
+    color: black;
+}
+
+.content{
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: 20px;
+    padding: 5%;
+    width:50%;
+}
+.content h2{
+    margin-bottom: 20px;
+}
+
+#categaries{
+    background-image: url(images/pic2.jpeg);
+    background-size:cover ;
+}
+
+
+#service{
+    background-image: url(images/pic3.webp);
+    background-size: cover;
+}
+
+#order{
+    background-image: url(images/pic4.jpeg);
+    background-size: cover;
+}
+
+#contact{
+    background-color: rgba(0, 0, 0);
+    color:white
 }
