@@ -105,7 +105,7 @@ header .btnLogin-popup:hover::before{
     transform: scaleX(0);
     transition: transform .5s;
 }
-.nav-bar a:hover::after,.nav-bar .active{
+.nav-bar a:hover::after,.nav-bar a.active{
     font-size: 20px ;
     color: darkgoldenrod;
     transform: scaleX(1);
@@ -128,6 +128,7 @@ header .btnLogin-popup:hover::before{
     transition:transform .5s, height .2s ease;
     overflow: hidden;
     transform: scale(0);
+    z-index: 5;
 }
 .wrapper.active-btnPopup{
     transform:scale(1);
