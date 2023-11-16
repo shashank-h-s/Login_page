@@ -301,7 +301,7 @@ section{
     z-index: 1;
 }
 .profile{
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, .5);
     border-radius: 20px;
     padding: 5%;
 }
@@ -314,7 +314,7 @@ section{
 }
 
 .content{
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .7);
     border-radius: 20px;
     padding: 5%;
     width:50%;
@@ -326,6 +326,7 @@ section{
 #categaries{
     background-image: url(images/pic2.jpeg);
     background-size:cover ;
+    backdrop-filter: unset;
 }
 
 
@@ -340,6 +341,7 @@ section{
 }
 
 #contact{
-    background-color: rgba(0, 0, 0);
-    color:white
+    background-color: rgb(16, 16, 16);
+    color:white;
+    font-size: 2rem;
 }
