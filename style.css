@@ -105,7 +105,7 @@ header .btnLogin-popup:hover::before{
     transform: scaleX(0);
     transition: transform .5s;
 }
-.nav-bar a:hover::after,.nav-bar a.active{
+.nav-bar a:hover,.nav-bar a.active::after{
     font-size: 20px ;
     color: orange;
     transform: scaleX(1);
