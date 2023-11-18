@@ -150,9 +150,9 @@ header .btnLogin-popup:hover::before{
     width: 100%;
     padding: 40px;;
 }
-.wrapper .form-box.login{
-    /* display: none; */
-}
+/* .wrapper .form-box.login{
+    display: none;
+} */
 
 .wrapper .form-box.registration{
     position: absolute;
